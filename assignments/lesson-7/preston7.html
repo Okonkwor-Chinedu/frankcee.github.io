@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CIT 230 Assignment Portal | Chinedu Frank Okonkwor | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Chinedu Frank Okonkwor Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/Anyweather_logo_big.jpg" alt="Site logo"> 
+        Providing the best weather updates and forecast to everyone, with our user friendly platform is our goal.
+        </header>
+        <nav display flex>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                     <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../lesson-7/preston7.html">Preston</a></li>
+                      <li><a href="SodaSprings">Soda Springs</a></li>
+                      <li><a href="FishHaven">Fish Haven</a></li>
+                      <li><a href="StormCenter">Storm Center</a></li>
+                      <li><a href="../lesson-7/gallery-7.html"> Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Welcome to Preston, Idaho</h2>
+                <img class="hero" src="images/cit230_image_franklinSmall.jpg" alt="">
+                <div class="herodiv">
+                    
+                        <h3>Weather Summary</h3>
+                        <p>Temperature: <span id="current Temp">100</span>°F</p>
+                        <p>High: 72 °F</p>
+                        <p>Wind Chill:<span id="windchill"></span>°F</p> <button onclick="calwindchill()">Wind chill</button>
+                        <p>Humidity: 69%</p>
+                        <p>Wind Speed: <span id="windspeed">5</span>mph</p>
+                    </section>
+                </div>
+            </main>
+            <h2>5 days forecast</h2> 
+            <img src="images/194815606_c2731ecac1.jpg" alt="">
+            <img src="images/weather.jpg" alt="">
+            <div>This website will be called weatherupdate.news. Like the site name implies, the website will be
+                used as source of get updates of weather reports. My audience will be able to use my website
+                to get information about weather. visiting my website every time will give you the best answer and satisfaction concerning weather forecast. The eairlier you know the forecast of the weather the better you prepre for it
+            </div>
+        
+        
+        <footer>
+        
+                
+                <div class="wrapper">
+                        <div class="top">
+                          <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
+                          <p>Phone Number: 4353135223
+                        </div>
+                         <div class="bottom">
+                            <button onclick="myFunction()">Get date</button>
+                             <span id="currentdate"> </span>
+                          <p>&copy; 2019 - Reseverved for weather updates </p>
+                        </div>
+                      </div>
+
+                                   
+
+        </footer>
+    </body>
+</html>
