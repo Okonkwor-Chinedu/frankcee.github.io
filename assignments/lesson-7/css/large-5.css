@@ -73,10 +73,11 @@ nav ul.kids {
   }
   div {
     background-color: lightblue;
-    width: 800px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
   }
     .top{
       background-color: lightblue;
@@ -86,7 +87,7 @@ nav ul.kids {
       background-color: darkgreen;
     }
     .wrapper {
-      text-align: middle;
+      
        margin-left: auto;
         margin-right: auto;
       width: 50%;
@@ -94,6 +95,9 @@ nav ul.kids {
     }
   .hero{
       width: 70%;
+  }
+  .herodiv{
+    width: 50%;
   }
   .logo{
     width: 5%;
@@ -113,33 +117,9 @@ nav ul.kids {
     float: right;
     text-align: center;font-size: .75rem;
   }
-  div {
-    background-color: lightblue;
-    width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-    .top{
-      background-color: lightblue;
-      padding-bottom: 30px;
-    }
-    .bottom{
-      background-color: darkgreen;
-    }
-    .wrapper {
-      text-align: middle;
-       margin-left: auto;
-        margin-right: auto;
+    .about{
       width: 50%;
-      color:black;
     }
-  .hero{
-      width: 70%;
-  }
-  .logo{
-    width: 5%;
-}
 
   div.weather {
       grid-template-columns: repeat(3, 1fr);
