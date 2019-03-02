@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CIT 230 Assignment Portal | Chinedu Frank Okonkwor | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Chinedu Frank Okonkwor Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/storm.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="images/Anyweather_logo_big.jpg" alt="Site logo"> 
+        Providing the best weather updates and forecast to everyone, with our user friendly platform is our goal.
+        </header>
+        <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                     <li><a href="../../index.html">Home</a></li>
+                      <li><a href="Preston">Preston</a></li>
+                      <li><a href="SodaSprings">Soda Springs</a></li>
+                      <li><a href="FishHaven">Fish Haven</a></li>
+                      <li><a href="StormCenter">Storm Center</a></li>
+                      <li><a href="Gallery"> Gallery</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Storm Center</h2>
+                <h3 class="required">Please fill out the form with your correct information to report a storm.</h3>
+                <hr>
+        
+                <form action="thanks.html" method="get" enctype="multipart/form-data" name="storm" id="userReport">
+        
+                    <fieldset>
+                        <legend><span>Contact Information</span></legend>
+                        <label><span>Full Name (required)</span></label>
+                        <input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required>
+                           <label for="email">eMail:</label>
+                <input type="email" name="email" placeholder="user@email.org"><br>
+                        <label for="p">Phone (required):</label>
+                <input type="tel" name="phone" placeholder="###-###-####"><br>
+                        <label for="num">Zip Code:</label>
+                <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"><br>
+                                    
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend><span>Storm Information</span></legend>
+                        <label><span>Storm Date</span></label>
+                        <input name="date" type="date">
+                        <label><span>Storm Type</span></label>
+                        <input type="text" name="stormType" list="storms">
+                        <datalist id="storms">
+                    <option value="Heavy Snow / Blizzards">
+                <option value="Ice Storms">
+              <option value="Lightning">
+                     <option value="Flash Flood"></option>
+              <option value="Hail Storm"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+               <option value="Tornado"></option>
+                </datalist>
+                        <div id="severity">
+                            <label><span></span>Storm Severity (1 to 10):&nbsp;&nbsp;</span></label>
+                            <span id="ratingvalue">1</span>
+                        </div>
+                        <input type="range" id="rating" class="slider" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                            onchange="adjustRating(this.value)">
+                        <label><span>Storm Region</span></label>
+                        <div class="custom-select">
+                            <select name="region">
+                                <option value="0" disabled selected>Select Region</option>
+                                <option value="1">Preston</option>
+                                <option value="2">Soda Springs</option>
+                                <option value="3">Fish Haven</option>
+                            </select>
+                        </div>
+                        <label><span>User In-Danger</span></label>
+                        <label class="container"><span class="dangerAnswer">Yes</span>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span></label>
+                        <label class="container"><span class="dangerAnswer">Maybe</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span></label>
+                        <label class="container"><span class="dangerAnswer">No</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span></label>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend><span>Additional Information</span></legend>
+                        <textarea name="comments"></textarea>
+                    </fieldset>
+        
+                    <input type="submit" value="Submit" class="submitBtn">
+                    <input name="redirect" type="hidden" value="thanks.html">
+                </form>
+        
+            </main>
+        <footer>
+        
+                
+                <div class="wrapper">
+                        <div class="top">
+                          <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
+                          <p>Phone Number: 4353135223
+                        </div>
+                         <div class="bottom">
+                                <button onclick="myFunction()">Get date</button>
+                             <span id="currentdate"> </span>
+                          <p>&copy; 2019 - Reseverved for weather updates </p>
+                        </div>
+                      </div>
+
+                                   
+
+        </footer>
+    </body>
+</html>
