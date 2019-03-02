@@ -52,9 +52,7 @@ div.weather {margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-wi
 
 div.weather figure caption  { width: 250px; height: auto; margin: .5rem;}
 figcaption {font-size: smaller;}
-
-
-/*STORM CENTER*/
+/*Storm*/
 h3.required {
   text-align: center;
  font-family: "Times New Roman", Times, serif;
@@ -84,7 +82,6 @@ input {
 }
 .slider:hover {
   opacity: 1;
-  /* Fully shown on mouse-over */
 }
 
 div#severity {
