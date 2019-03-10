@@ -1,0 +1,173 @@
+body {
+	background-color: #FF8C00;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #FF8C00;
+	border: 1px solid #4B0082;
+	box-shadow: 0 0 30px #4B0082;
+  text-align: center;
+  
+}
+
+h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+    font-family: "Times New Roman", Times, serif;
+}
+  
+ p {
+    font-weight: normal;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+
+  ul{
+    font-weight: bold;
+    color: rgb(15, 64, 129);
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+    margin: 10px;
+    background-color: #FF8C00;
+    
+}
+div.weather {margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-width: 1048px;}
+
+div.weather figure caption  { width: 250px; height: auto; margin: .5rem;}
+figcaption {font-size: smaller;}
+/*Storm*/
+h3.required {
+  text-align: center;
+ font-family: "Times New Roman", Times, serif;
+}
+
+form {
+  max-width: 650px;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+}
+
+
+label {
+  display: block;
+}
+
+
+input {
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 4px;
+  width: 96%;
+}
+.slider:hover {
+  opacity: 1;
+}
+
+div#severity {
+  display: inline-flex;
+  font-family: 'Lato', sans-serif;
+  font-size: .7rem;
+  padding-bottom: 5px;
+}
+
+#ratingvalue {
+  font-family: 'Candal', sans-serif;
+  font-weight: 400;
+  color: #197BBD;
+  padding-top: 5px;
+}
+textarea {
+  height: 250px;
+	width: 100%;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 60%;
+}
+
+input[type="submit"] {
+  max-width: 20%;
+  margin: 0 20px;
+  color: white;
+  
+  background-color: blue;
+  cursor: pointer;
+}
+
+input[type="submit"]:active{
+transform: translateY(4px);
+}
+input[type="submit"]:hover {
+  background-color: pink;
+}
+
+/* Home Page */
+
+#towninfo {
+  display: grid;
+  grid-gap: 30px;
+  line-height: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#towninfo div {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: #677019;
+  padding-top: 10px;
+}
+
+#towninfo div:nth-of-type(1) {
+  order: 3;
+}
+
+#towninfo div:nth-of-type(2) {
+  order: 1;
+}
+
+#towninfo div:nth-of-type(3) {
+  order: 2;
+}
+
+#towninfo h5 {
+  text-align: center;
+  font-size: 4vw;
+}
+
+#towninfo em {
+  text-align: center;
+  font-size: 10pt;
+}
+
+#towninfo img {
+  width: 100%;
+}
+
