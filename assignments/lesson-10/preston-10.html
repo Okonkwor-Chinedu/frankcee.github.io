@@ -1,13 +1,101 @@
+
+<!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Weather API Test</title>
-        <meta name="description" content="API Test Activity for CIT 230 at BYU-I">
-        <script src="scripts/weatherapi.js"></script>
+        <title>CIT 230 Assignment Portal | Chinedu Frank Okonkwor | BYU-Idaho</title>
+        <meta name="description" content="Assignment portal page for Chinedu Frank Okonkwor Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/storm.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/preston.js"></script>
     </head>
     <body>
-        <h1>OpenWeatherMap.org API Test</h1>
-        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <header>
+            <a href="index.html"></a><img src="images/Anyweather_logo_big.jpg" alt="Site logo"></a>
+        <div class="headings">
+          <h1>Providing the best weather updates and forecast to everyone, with our user friendly platform is our goal.</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+             <li><a href="../lesson-9/index.html">Home</a></li>
+              <li><a href="../lesson-7/preston7.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+              <li><a href="../lesson-7/gallery-7.html"> Gallery</a></li>
+        </ul>
+    </nav>
+            <main>
+                <h2>Welcome to Preston, Idaho</h2>
+                <section class="hero">
+                    <img src="images/cit230_image_franklinSmall.jpg" alt=" dcdcdc">
+                    <div id="summary">
+                        <h3>Weather Summary</h3>
+                        <p>Temperature:<span id="currentTemp">100</span>°F</p>
+                        <p>High: 72 °F</p>
+                        <p>Wind Chill:<span id="windchill"></span>°F</p> <button onclick="calwindchill()">Wind chill</button>
+                        <p>Humidity: 69%</p>
+                        <p>Wind Speed: <span id="windspeed">5</span>mph</p>
+                    </div>
+                    </section>
+                    <section class="forecast">
+                        <h3>5 Day Forecast</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><span id="dayone">Wed</span></th>
+                                    <th><span id="daytwo">Thurs</span></th>
+                                    <th><span id="daythree">Fri</span></th>
+                                    <th><span id="dayfour">Sat</span></th>
+                                    <th><span id="dayfive">Sun</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                        <td><img src="images/sunny.png" id="weather_iconone" alt="Weather Icon"><br><span id="dayonetemp"></span>High
+                                            89&deg;F</td>
+                                        <td><img src="images/sunny.png" id="weather_icontwo" alt="Weather Icon"><br>High <span id="daytwotemp"></span>87&deg;F</td>
+                                        <td><img src="images/image3.png" id="weather_iconthree" alt="Weather Icon"><br>High <span id="daythreetemp"></span>78&deg;F</td>
+                                        <td><img src="images/image2.png" id="weather_iconfour" alt="Weather Icon"><br>High <span id="dayfourtemp"></span>75&deg;F</td>
+                                        <td><img src="images/image1.png" id="weather_iconfive" alt="Weather Icon"><br>High <span id="dayfivetemp"></span>72&deg;F</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <article>
+                                <h3>Objective</h3>
+                                <p class="town-article">
+
+            <img src="images/3896dbfde700d0315cc1a2317383b000x.jpg" alt="">
+                    This website will be called weatherupdate.news. Like the site name implies, the website will be
+                used as source of get updates of weather reports. My audience will be able to use my website
+                to get information about weather. visiting my website every time will give you the best answer and satisfaction concerning weather forecast. The eairlier you know the forecast of the weather the better you prepre for it
+            </p>
+        </article>
+    </main>
+        
+    <footer>
+        
+                
+        <div class="wrapper">
+                <div class="top">
+                  <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
+                  <p>Phone Number: 4353135223
+                </div>
+                <span id="currentdate">Current Date Placeholder</span></p>
+                  <p>&copy; 2019 - Reseverved for weather updates </p>
+                </div>
+              </div>
+
+</footer>
+        
     </body>
 </html>

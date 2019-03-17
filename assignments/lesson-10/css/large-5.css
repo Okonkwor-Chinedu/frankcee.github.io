@@ -1,0 +1,99 @@
+@media only screen and (min-width: 54em) {
+
+  /*HEADER*/
+  .header-nocurrent {
+      padding-left: 0;
+  }
+
+  header h1 {
+      font-size: 2.2em;
+  }
+
+  header img {
+      padding-top: 30px;
+  }
+
+  /*NAVIGATION MENU*/
+
+  nav button {
+      display: none;
+  }
+
+  nav ul {
+      display: inline-flex;
+      border: none;
+
+  }
+
+  nav ul li a {
+      font-size: 1.2em;
+      padding: .6rem 1.8rem;
+  }
+
+  nav ul.hide {
+      display: inline-flex;
+  }
+
+  /*HERO SECTION*/
+  section.hero {
+      max-width: 1000px;
+      margin: auto;
+  }
+
+  div.home-hero h3 {
+      font-size: 2rem;
+  }
+
+  /*5 DAY WEATHER FORECAST*/
+  table {
+      margin: 10px auto 30px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  section h3 {
+      font-family: 'Candal', sans-serif;
+      font-size: 1.2rem;
+  }
+
+  section.forecast {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      border-radius: .3em;
+      padding: 1.2rem;
+      text-align: center;
+  }
+
+  .forecast th {
+      background-color: #197bbd;
+      color: #fff;
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .forecast td,
+  .forecast th {
+      border: 3px solid #ddd;
+  }
+
+  .forecast td {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 20px 45px;
+  }
+
+  .forecast img {
+      width: 90px;
+  }
+
+  
+  /*FOOTER*/
+   .wrapper {
+      
+       margin-left: auto;
+        margin-right: auto;
+      width: 70%;
+      color:rgb(240, 14, 14);
+      font-size: 1.2em;
+      text-align: center;
+    }
+}
