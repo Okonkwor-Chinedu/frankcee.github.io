@@ -200,8 +200,27 @@ transform: translateY(4px);
 input[type="submit"]:hover {
   background-color: pink;
 }
+/*Gallery*/
+div.weather  {
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-/* Home Page */
+div.weather  img {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+div.weather  figure figcaption {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: .7rem;
+  padding: 15px 0;
+}
+
+/* HomePage */
 
 #towninfo {
   display: grid;
@@ -247,7 +266,7 @@ input[type="submit"]:hover {
 
 
 
-/*-----FOOTER-----*/
+/*FOOTER*/
 .wrapper {
       
   margin-left: auto;

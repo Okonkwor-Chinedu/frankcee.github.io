@@ -125,6 +125,25 @@ div.weather {margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-wi
 
 div.weather figure caption  { width: 250px; height: auto; margin: .5rem;}
 figcaption {font-size: smaller;}
+/*Gallery*/
+div.weather  {
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+div.weather  img {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+div.weather  figure figcaption {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: .7rem;
+  padding: 15px 0;
+}
 /*Storm*/
 h3.required {
   text-align: center;

@@ -120,6 +120,25 @@ img.myphoto {
   height: auto;
   margin-top: 20px;
 }
+/*Gallery*/
+div.weather  {
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+div.weather  img {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+
+div.weather  figure figcaption {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: .7rem;
+  padding: 15px 0;
+}
 
 /* SUMMARY */
 div#summary {
