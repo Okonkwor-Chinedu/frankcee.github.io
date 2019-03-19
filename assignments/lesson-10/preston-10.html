@@ -14,6 +14,7 @@
         <script src="scripts/storm.js"></script>
         <script src="scripts/windchill.js"></script>
         <script src="scripts/preston.js"></script>
+        <script src="scripts/weathersummary.js"></script>
     </head>
     <body>
         <header>
@@ -36,40 +37,40 @@
             <main>
                 <h2>Welcome to Preston, Idaho</h2>
                 <section class="hero">
-                    <img src="images/cit230_image_franklinSmall.jpg" alt=" dcdcdc">
+                    <img src="images/cit230_image_franklinSmall.jpg" alt="">
                     <div id="summary">
                         <h3>Weather Summary</h3>
-                        <p>Temperature:<span id="currentTemp">100</span>°F</p>
-                        <p>High: 72 °F</p>
-                        <p>Wind Chill:<span id="windchill"></span>°F</p> <button onclick="calwindchill()">Wind chill</button>
-                        <p>Humidity: 69%</p>
-                        <p>Wind Speed: <span id="windspeed">5</span>mph</p>
+                        <p>Currently: <span id="weatherDesc"></span></p>
+                        <p>Temperature: <span id="currentTemp"></span>&deg;F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+                        <p>Wind Direction: <span id="windDegree"></span><span id="windDir"></span></p>
+                        <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
                     </div>
                     </section>
-                    <section class="forecast">
-                        <h3>5 Day Forecast</h3>
-                        <table>
+                <section class="forecast">
+                    <h3>5 DAY FORECAST</h3>
+                    <table>
                             <thead>
                                 <tr>
-                                    <th><span id="dayone">Wed</span></th>
-                                    <th><span id="daytwo">Thurs</span></th>
-                                    <th><span id="daythree">Fri</span></th>
-                                    <th><span id="dayfour">Sat</span></th>
-                                    <th><span id="dayfive">Sun</span></th>
+                                    <th><span id="day1"></span></th>
+                                    <th><span id="day2"></span></th>
+                                    <th><span id="day3"></span></th>
+                                    <th><span id="day4"></span></th>
+                                    <th><span id="day5"></span></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                        <td><img src="images/sunny.png" id="weather_iconone" alt="Weather Icon"><br><span id="dayonetemp"></span>High
-                                            89&deg;F</td>
-                                        <td><img src="images/sunny.png" id="weather_icontwo" alt="Weather Icon"><br>High <span id="daytwotemp"></span>87&deg;F</td>
-                                        <td><img src="images/image3.png" id="weather_iconthree" alt="Weather Icon"><br>High <span id="daythreetemp"></span>78&deg;F</td>
-                                        <td><img src="images/image2.png" id="weather_iconfour" alt="Weather Icon"><br>High <span id="dayfourtemp"></span>75&deg;F</td>
-                                        <td><img src="images/image1.png" id="weather_iconfive" alt="Weather Icon"><br>High <span id="dayfivetemp"></span>72&deg;F</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </section>
+                                    <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
                         <article>
                                 <h3>Objective</h3>
                                 <p class="town-article">
@@ -84,19 +85,17 @@
         
     <footer>
         
-                
-        <div class="wrapper">
-                <div class="top">
-                  <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
-                  <p>Phone Number: 4353135223
-                </div>
-                <button onclick="myFunction()">Get date</button>
-                             <span id="currentdate"> </span>
-                  <p>&copy; 2019 - Reseverved for weather updates </p>
-                </div>
-              </div>
+                <aside>
+            <div class="wrapper">
+                    <div class="top">
+                      <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
+                      <p>Phone Number: 4353135223
+                            <img src="images/map4.png" alt="map of local area" id="local">
+                    </div>
+                </aside>
+                    <p class="footer-bar">&copy; 2019 - Reseverved for weather updates<span id="currentdate"> </span><button onclick="myFunction()">Get date</button> <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a> </p>
 
-</footer>
+    </footer>
         
     </body>
 </html>
