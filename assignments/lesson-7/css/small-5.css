@@ -15,6 +15,10 @@ header {
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
   text-align: center;
+  color: blue;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
   margin-left: auto;
 }
 
@@ -146,12 +150,33 @@ div.weather {margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-wi
 div.weather figure caption  { width: 250px; height: auto; margin: .5rem;}
 figcaption {font-size: smaller;}
 
-/*FOOTER*/
-.wrapper {
-      
-  margin-left: auto;
-   margin-right: auto;
- width: 0%;
- color:rgb(10, 10, 10);
- background-color: lightblue;
+/*-----FOOTER-----*/
+footer {
+  margin-top: 10%;
+  clear: both;
+}
+
+footer aside {
+  background-color: rgb(122, 122, 153);
+border: 2px solid #D1D1D1;
+margin: 20px;
+font-family: 'Lato', sans-serif;
+font-size: 1.3em;
+line-height: 1.3em;
+padding: 30px 30px 100px 30px;
+}
+
+footer aside p {
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+p.footer-bar {
+  padding: 20px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: .7rem;
+  text-align: center;
+  margin: 0;
+  line-height: 22px;
 }

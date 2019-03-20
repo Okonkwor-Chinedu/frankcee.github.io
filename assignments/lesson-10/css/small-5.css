@@ -215,9 +215,7 @@ footer {
 }
 
 footer aside {
-  background-image:
-  linear-gradient(to right,
-  #ffffff, #E5E5E5);
+  background-color: rgb(122, 122, 153);
 border: 2px solid #D1D1D1;
 margin: 20px;
 font-family: 'Lato', sans-serif;
