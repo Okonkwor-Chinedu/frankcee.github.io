@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Fish Haven</title>
+        <meta name="description" content="Assignment portal page for Chinedu Frank Okonkwor Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small-5.css">
+        <link rel="stylesheet" href="css/large-5.css">
+        
+    </head>
+    <body>
+        <header>
+            <a href="index.html"></a><img src="images/Anyweather_logo_big.jpg" alt="Site logo">
+        <div class="headings">
+          <h1>Providing the best weather updates and forecast to everyone, with our user friendly platform is our goal.</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+             <li><a href="../lesson-9/index.html">Home</a></li>
+              <li><a href="../lesson-10/preston-10.html">Preston</a></li>
+              <li><a href="../lesson-11/sodasprings.html">Soda Springs</a></li>
+              <li><a href="../lesson-11/fishhaven.html">Fish Haven</a></li>
+              <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+              <li><a href="../lesson-7/gallery-7.html"> Gallery</a></li>
+        </ul>
+    </nav>
+            <main>
+                <h2>Welcome to Fish Haven, Idaho</h2>
+                <section class="hero">
+                    <img src="images/FishHaven.jpg" alt="">
+                    <div id="summary">
+                        <h3>Weather Summary</h3>
+                        <p>Currently: <span id="weatherDesc"></span></p>
+                        <p>Temperature: <span id="currentTemp"></span>&deg;F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="windSpeed"></span>mph</p>
+                        <p>Wind Direction: <span id="windDegree"></span><span id="windDir"></span></p>
+                        <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                    </div>
+                    </section>
+                <section class="forecast">
+                    <h3>5 DAY FORECAST</h3>
+                    <table>
+                            <thead>
+                                <tr>
+                                    <th><span id="day1"></span></th>
+                                    <th><span id="day2"></span></th>
+                                    <th><span id="day3"></span></th>
+                                    <th><span id="day4"></span></th>
+                                    <th><span id="day5"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="#" id="weather_icon1" alt="Weather Icon"><br><span id="highTemp1"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon2" alt="Weather Icon"><br><span id="highTemp2"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon3" alt="Weather Icon"><br><span id="highTemp3"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon4" alt="Weather Icon"><br><span id="highTemp4"></span>&deg;F</td>
+                                    <td><img src="#" id="weather_icon5" alt="Weather Icon"><br><span id="highTemp5"></span>&deg;F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+                        <article>
+                                <h3>
+                                        Little Fish Haven, Idaho, is paradise for residents</h3>
+                                <p class="town-article">
+
+            <img src="images/animal-daylight-deer-386138.jpg" alt="">
+            FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake.
+
+            <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles. <a href="https://www.deseretnews.com/article/800677/Little-Fish-Haven-Idaho-is-paradise-for-residents.html">continue</a></p>
+            
+        </article>
+        <aside class="aside-events">
+            
+            <h4 class="h4-events">Upcoming Events in Preston</h4>
+    </aside>
+    </main>
+        
+    <footer>
+        
+                <aside>
+            <div class="wrapper">
+                    <div class="top">
+                      <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
+                      <p>Phone Number: 4353135223
+                            <img src="images/map4.png" alt="map of local area" id="local">
+                    </div>
+                </aside>
+                    <p class="footer-bar">&copy; 2019 - Reseverved for weather updates<span id="currentdate"> </span><button onclick="myFunction()">Get date</button> <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a> </p>
+
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/storm.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/preston.js"></script>
+        <script src="scripts/weathersummary.js"></script>
+        
+    </body>
+</html>

@@ -38,15 +38,15 @@ function showInfo(jsonObj) {
     myArticle.appendChild(myPic);
 
     if (i === 1)
-      myPic.src = 'images/hero-home.jpg'
+      myPic.src = 'images/FishHaven.jpg'
       myPic.setAttribute('class', 'homepic1');
       myPic.setAttribute('alt', 'Fish Haven Image');
     if (i === 4)
-      myPic.src = 'images/background-home.jpg'
+      myPic.src = 'images/3896dbfde700d0315cc1a2317383b000x.jpg'
       myPic.setAttribute('class', 'homepic2');
       myPic.setAttribute('alt', 'Preston Image');
     if (i === 5)
-      myPic.src = 'images/mountain-home.jpg'
+      myPic.src = 'images/preston.jpg'
       myPic.setAttribute('class', 'homepic3');
       myPic.setAttribute('alt', 'Soda Springs Image');
 

@@ -238,3 +238,23 @@ p.footer-bar {
   margin: 0;
   line-height: 22px;
 }
+h4 {
+  text-align: center;
+
+}
+
+.aside-events li {
+  background-color: rgba(99, 65, 65, 0.2);
+  color: white;
+  margin:inherit;
+  padding: 25px;
+  text-align: center;
+   display: inline-block;
+ 
+ }
+
+
+
+
+
+ 
