@@ -16,23 +16,23 @@
   /*NAVIGATION MENU*/
 
   nav button {
-      display: none;
-  }
+    display: none;
+}
 
-  nav ul {
-      display: inline-flex;
-      border: none;
+nav ul {
+    display: inline-flex;
+    border: none;
 
-  }
+}
 
-  nav ul li a {
-      font-size: 1.2em;
-      padding: .6rem 1.8rem;
-  }
+nav ul li a {
+    font-size: 1.2em;
+    padding: .6rem 1.8rem;
+}
 
-  nav ul.hide {
-      display: inline-flex;
-  }
+nav ul.hide {
+    display: inline-flex;
+}
 
   /*HERO SECTION*/
   section.hero {

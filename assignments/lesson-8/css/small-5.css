@@ -38,7 +38,6 @@ header {
 }
 
 
-
 /*NAVIGATION MENU*/
 nav {
   background-image:
@@ -73,9 +72,13 @@ nav ul li a {
   color: #fff;
   font-size: .9rem;
 }
-nav li.active {
-  background-color: #79B473;
+
+
+.navigation .active {
+  color: red;
 }
+
+
 nav ul li a:hover {
   background-color: #197BBD;
   transition: 1s;
