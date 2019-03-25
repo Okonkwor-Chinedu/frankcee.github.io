@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Gallery</title>
+        <title>CIT 230 Assignment Portal | Chinedu Frank Okonkwor | BYU-Idaho</title>
         <meta name="description" content="Assignment portal page for Chinedu Frank Okonkwor Student in CIT 230: Web Front-End Development at Brigham Young University-Idaho.">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small-5.css">
         <link rel="stylesheet" href="css/large-5.css">
-        <link rel="stylesheet" href="css/medium-7.css">
-        
+       
     </head>
     <body>
         <header>
@@ -20,8 +19,8 @@
     </header>
 
         <nav>
-            <ul class="navigation">
-                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide mainmenu">
                  <li><a href="../lesson-9/index.html">Home</a></li>
                   <li><a href="../lesson-10/preston-10.html">Preston</a></li>
                   <li><a href="../lesson-11/sodasprings.html">Soda Springs</a></li>
@@ -30,33 +29,11 @@
                   <li><a href="../lesson-7/gallery-7.html"> Gallery</a></li>
             </ul>
         </nav>
-        <main>
-            
-                <h2>Gallery</h2>
 
-    <div class="weather">
-        <figure>
-            <img class="weather" src="images/The-Mysteries-of-the-Weather-What-Are-Cyclones-and-Anticyclones-3.jpg">
-            <figcaption>Storm in Fish Haven </figcaption>
-        </figure>
-        <figure><img class="weather" src="images/APphoto_Winter-Weather-New-Jersey2.jpg">
-            <figcaption>Snow storm in Preston</figcaption>
-        </figure>
-        <figure><img class="weather" src="images/phpThumb_generated_thumbnail.jpg">
-            <figcaption>Winter in Soda Springs</figcaption>
-        </figure>
-        <figure><img class="weather" src="images/th(1).jpg">
-            <figcaption>Beautiful rainbow in Soda Springs</figcaption>
-        </figure>
-        <figure><img class="weather" src="images/th(3).jpg">
-            <figcaption> Sun rise in Fish Haven </figcaption>
-        </figure>
-        <figure><img class="weather" src="images/th(4).jpg">
-            <figcaption> Beautiful Preston after a rain fall</figcaption>
-        </figure>
-    </div>
+    <main>
+        <h2>Thank you for submitting your report, Be assured we will get back to you as soon as posible!</h2>
     </main>
-    
+
     <footer>
         
         <aside>
@@ -72,7 +49,8 @@
 
 </footer>
 <script src="scripts/currentdate.js"></script>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/windchill.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/storm.js"></script>
+
 </body>
 </html>

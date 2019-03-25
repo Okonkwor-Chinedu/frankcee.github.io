@@ -12,15 +12,15 @@
     </head>
     <body>
         <header>
-            <a href="index.html"></a><img src="images/Anyweather_logo_big.jpg" alt="Site logo"></a>
+            <a href="index.html"></a><img src="images/Anyweather_logo_big.jpg" alt="Site logo">
         <div class="headings">
           <h1>Providing the best weather updates and forecast to everyone, with our user friendly platform is our goal.</h1>
         </div>
     </header>
 
         <nav>
-            <ul class="navigation">
-                <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide mainmenu">
                  <li><a href="../lesson-9/index.html">Home</a></li>
                   <li><a href="../lesson-10/preston-10.html">Preston</a></li>
                   <li><a href="../lesson-11/sodasprings.html">Soda Springs</a></li>
@@ -30,80 +30,79 @@
             </ul>
         </nav>
 
-            <main>
-                <h2>Storm Center</h2>
-                <h3 class="required">Please fill out the form with your correct information to report a storm.</h3>
-                <hr>
-        
-                <form action="thanks.html" method="get" enctype="multipart/form-data" name="storm" id="userReport">
-        
-                    <fieldset>
-                        <legend><span>Contact Information</span></legend>
-                        <label><span>Full Name (required)</span></label>
-                        <input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required>
-                           <label for="email">eMail:</label>
-                <input type="email" name="email" placeholder="user@email.org"><br>
-                        <label for="p">Phone (required):</label>
-                <input type="tel" name="phone" placeholder="###-###-####"><br>
-                        <label for="num">Zip Code:</label>
-                <input type="number" id="num" name="num" ><br>
-                                    
-                    </fieldset>
-        
-                    <fieldset>
-                        <legend><span>Storm Information</span></legend>
-                        <label><span>Storm Date</span></label>
-                        <input name="date" type="date">
-                        <label><span>Storm Type</span></label>
-                        <input type="text" name="stormType" list="storms">
-                        <datalist id="storms">
-                    <option value="Heavy Snow / Blizzards">
-                <option value="Ice Storms">
-              <option value="Lightning">
-                     <option value="Flash Flood"></option>
-              <option value="Hail Storm"></option>
-              <option value="Hurricane"></option>
-              <option value="Thunderstorm"></option>
-               <option value="Tornado"></option>
-                </datalist>
-                        <div id="severity">
-                            <label><span></span>Storm Severity (1 to 10):&nbsp;&nbsp;</span></label>
-                            <span id="ratingvalue">1</span>
-                        </div>
-                        <input type="range" id="rating" class="slider" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)"
-                            onchange="adjustRating(this.value)">
-                        <label><span>Storm Region</span></label>
-                        <div class="custom-select">
-                            <select name="region">
-                                <option value="0" disabled selected>Select Region</option>
-                                <option value="1">Preston</option>
-                                <option value="2">Soda Springs</option>
-                                <option value="3">Fish Haven</option>
-                            </select>
-                        </div>
-                        <label><span>User In-Danger</span></label>
-                        <label class="container"><span class="dangerAnswer">Yes</span>
+        <main>
+            <h2>Storm Report</h2>
+            <h3 class="required">Please fill out the form below to report a storm</h3>
+            <hr>
+    
+            <form action="thankyou.html" method="get" enctype="multipart/form-data" name="storm" id="userReport">
+                 <fieldset>
+                    <legend><span>Contact Information</span></legend>
+                    <label><span>Full Name (required)</span></label>
+                    <input name="fullname" type="text" value="" pattern="[a-zA-Z -._]{5,99}" required>
+                    <label><span>Email</span><input name="email" type="email" value="" placeholder="example@email.com"></label>
+                    <label><span>Phone (required)</span></label>
+                    <input name="phone" type="tel" value="" pattern="[0-9]{10,20}" required>
+                    <label><span>Zip Code (required)</span></label>
+                    <input name="zip" type="number" required>
+                </fieldset>
+    
+                <fieldset>
+                    <legend><span>Storm Information</span></legend>
+                    <label><span>Storm Date</span></label>
+                    <input name="date" type="date">
+                    <label><span>Storm Type</span></label>
+                    <input type="text" name="stormType" list="storms">
+                    <datalist id="storms">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <div id="severity">
+                        <label><span>Storm Severity (1 to 10):&nbsp;&nbsp;</span></label>
+                        <span id="ratingvalue">1</span>
+                    </div>
+                    <input type="range" id="rating" class="slider" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+                        onchange="adjustRating(this.value)">
+                    <label><span>Storm Region</span></label>
+                    <div class="custom-select">
+                        <select name="region">
+                            <option value="0" disabled selected>Select Region</option>
+                            <option value="1">Preston</option>
+                            <option value="2">Soda Springs</option>
+                            <option value="3">Fish Haven</option>
+                        </select>
+                    </div>
+    
+                    <label><span>User In-Danger</span>
+                    </label>
+                    <label class="container">
+                        <span class="dangerAnswer">Yes</span>
                         <input type="radio" checked="checked" name="radio">
-                        <span class="checkmark"></span></label>
-                        <label class="container"><span class="dangerAnswer">Maybe</span>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="dangerAnswer">Maybe</span>
                         <input type="radio" name="radio">
-                        <span class="checkmark"></span></label>
-                        <label class="container"><span class="dangerAnswer">No</span>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="dangerAnswer">No</span>
                         <input type="radio" name="radio">
-                        <span class="checkmark"></span></label>
-                    </fieldset>
-        
-                    <fieldset>
-                        <legend><span>Additional Information</span></legend>
-                        <textarea name="comments"></textarea>
-                    </fieldset>
-        
-                    <input type="submit" value="Submit" class="submitBtn">
-                    <input name="redirect" type="hidden" value="thanks.html">
-                </form>
-        
-            </main>
-                
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend><span>Additional Information</span></legend>
+                    <textarea name="comments"></textarea>
+                </fieldset>
+    
+                <input type="submit" value="Submit" class="submitBtn">
+                <input name="redirect" type="hidden" value="thanks.html">
+            </form>
+    
+        </main>
     <footer>
         
         <aside>
@@ -112,6 +111,7 @@
               <p> Contact us at:<br> 663 S 544 E <br> Preston, Idaho</p>
               <p>Phone Number: 4353135223
                     <img src="images/map4.png" alt="map of local area" id="local">
+            </div>
             </div>
         </aside>
             <p class="footer-bar">&copy; 2019 - Reseverved for weather updates<span id="currentdate"> </span><button onclick="myFunction()">Get date</button> <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a> </p>
